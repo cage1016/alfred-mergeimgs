@@ -1,38 +1,561 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.kaichu.mergeimgs</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
 	<dict>
-		<key>bundleid</key>
-		<string>com.kaichu.appendimgs</string>
-		
-		<key>category</key>
-		<string>Tools</string>
-		
-		<key>connections</key>
-		<dict>
-		</dict>
-		<key>createdby</key>
-		<string>KAI CHU CHUNG</string>
-		<key>description</key>
-		<string>Append images to one image with horizontal or vertical</string>
-		<key>disabled</key>
-		<false/>
-		<key>name</key>
-		<string>Append Images</string>
-		<key>objects</key>
+		<key>040EFE50-8A22-4DBC-BE0B-C8CFC5B578C2</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E16E822-1D18-4BA3-888D-268A7AF42DFF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>readme</key>
-		<string/>
-		<key>uidata</key>
-		<dict>
-		</dict>
-		<key>userconfigurationconfig</key>
+		<key>7E16E822-1D18-4BA3-888D-268A7AF42DFF</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8DA4DF19-A69F-4633-A899-0F9C2694C418</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>AAF941DB-A595-4072-BD25-6BCC55A93AE2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>59E7F052-6C3C-4F2B-A525-947E8D1C7E01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>57CB54B3-8B1E-4F86-8390-AC626FA235F7</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>370A0AFF-2CE3-4D39-A49D-8C9E284ADBFA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>2A316F1C-9FE9-43A3-A61D-F5CEFDF2420D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>version</key>
-		<string>0.1.0</string>
-		<key>webaddress</key>
-		<string>https://github.com/cage1016/alfred-appendimgs</string>
+		<key>96792C8D-8EFB-432E-8908-D4B94186E344</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A03318E0-F51E-4C5C-BBC9-80E28292965D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A03318E0-F51E-4C5C-BBC9-80E28292965D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E16E822-1D18-4BA3-888D-268A7AF42DFF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AA8869E9-E6E2-4D0E-9D1B-2B684224F12B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>040EFE50-8A22-4DBC-BE0B-C8CFC5B578C2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
+	<key>createdby</key>
+	<string>KAI CHU CHUNG</string>
+	<key>description</key>
+	<string>Merge the images into a singular horizontal or vertical image</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Merge Images</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{var:target}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>8DA4DF19-A69F-4633-A899-0F9C2694C418</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>completed with warnings:
+{var:errmsg}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>59E7F052-6C3C-4F2B-A525-947E8D1C7E01</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:exitcode}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string>success</string>
+						<key>uid</key>
+						<string>AAF941DB-A595-4072-BD25-6BCC55A93AE2</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:exitcode}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>warning</string>
+						<key>uid</key>
+						<string>57CB54B3-8B1E-4F86-8390-AC626FA235F7</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:exitcode}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>failure</string>
+						<key>uid</key>
+						<string>2A316F1C-9FE9-43A3-A61D-F5CEFDF2420D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>7E16E822-1D18-4BA3-888D-268A7AF42DFF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>imgs2Horizontal</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>AA8869E9-E6E2-4D0E-9D1B-2B684224F12B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>function break_err() {
+  cat &lt;&lt;EOF
+{ "alfredworkflow": {
+    "arg": "",
+    "variables": {
+      "errmsg": "$errmsg",
+      "exitcode": $1,
+      "target": "$target"
+    }
+  }
+}
+EOF
+  exit
+}
+
+unset errmsg
+unset target
+
+# Generates a random string of a specified length from a given character set
+function random_string {
+    local length=$1
+    local charset=$2
+    local str=""
+    for ((i=0; i&lt;$length; i++)); do
+        local rand_char=${charset:RANDOM%${#charset}:1}
+        str+=$rand_char
+    done
+    echo $str
+}
+
+# Generates a random image filename with a ".png" extension
+function random_image_filename {
+    local length=10  # specify the length
+    local charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"  # specify the character set
+    local filename=$(random_string $length $charset)
+    echo "${filename}.png"
+}
+
+# make sure dest_dir exists
+if [ ! -d "$dest_dir" ]; then
+  if ! /bin/mkdir -p "$HOME/$dest_dir"; then
+    errmsg="failed to create dest_dir:\n$dest_dir"
+    break_err 2
+  fi
+fi
+
+# Initialize an empty array to hold the file names
+files=()
+
+# Loop through each argument
+for arg in "$@"; do
+  # Append each argument to the files array
+  files+=("$arg")
+done
+
+# Generate a random filename
+filename=$(random_image_filename)
+target="$HOME/$dest_dir/$filename"
+
+# Execute the convert command with the file names
+convert +append "${files[@]}" "$target"
+
+if [ -n "$errmsg" ]; then
+  break_err 1
+else
+  break_err 0
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>040EFE50-8A22-4DBC-BE0B-C8CFC5B578C2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>failed with error:
+{var:errmsg}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>370A0AFF-2CE3-4D39-A49D-8C9E284ADBFA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>imgs2Vertical</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>96792C8D-8EFB-432E-8908-D4B94186E344</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>function break_err() {
+  cat &lt;&lt;EOF
+{ "alfredworkflow": {
+    "arg": "",
+    "variables": {
+      "errmsg": "$errmsg",
+      "exitcode": $1,
+      "target": "$target"
+    }
+  }
+}
+EOF
+  exit
+}
+
+unset errmsg
+unset target
+
+# Generates a random string of a specified length from a given character set
+function random_string {
+    local length=$1
+    local charset=$2
+    local str=""
+    for ((i=0; i&lt;$length; i++)); do
+        local rand_char=${charset:RANDOM%${#charset}:1}
+        str+=$rand_char
+    done
+    echo $str
+}
+
+# Generates a random image filename with a ".png" extension
+function random_image_filename {
+    local length=10  # specify the length
+    local charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"  # specify the character set
+    local filename=$(random_string $length $charset)
+    echo "${filename}.png"
+}
+
+# make sure dest_dir exists
+if [ ! -d "$dest_dir" ]; then
+  if ! /bin/mkdir -p "$HOME/$dest_dir"; then
+    errmsg="failed to create dest_dir:\n$dest_dir"
+    break_err 2
+  fi
+fi
+
+# Initialize an empty array to hold the file names
+files=()
+
+# Loop through each argument
+for arg in "$@"; do
+  # Append each argument to the files array
+  files+=("$arg")
+done
+
+# Generate a random filename
+filename=$(random_image_filename)
+target="$HOME/$dest_dir/$filename"
+
+# Execute the convert command with the file names
+convert -append "${files[@]}" "$target"
+
+if [ -n "$errmsg" ]; then
+  break_err 1
+else
+  break_err 0
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A03318E0-F51E-4C5C-BBC9-80E28292965D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>040EFE50-8A22-4DBC-BE0B-C8CFC5B578C2</key>
+		<dict>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>185</real>
+		</dict>
+		<key>370A0AFF-2CE3-4D39-A49D-8C9E284ADBFA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>720</real>
+			<key>ypos</key>
+			<real>280</real>
+		</dict>
+		<key>59E7F052-6C3C-4F2B-A525-947E8D1C7E01</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>720</real>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>7E16E822-1D18-4BA3-888D-268A7AF42DFF</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>175</real>
+		</dict>
+		<key>8DA4DF19-A69F-4633-A899-0F9C2694C418</key>
+		<dict>
+			<key>xpos</key>
+			<real>715</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>96792C8D-8EFB-432E-8908-D4B94186E344</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>A03318E0-F51E-4C5C-BBC9-80E28292965D</key>
+		<dict>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>AA8869E9-E6E2-4D0E-9D1B-2B684224F12B</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>185</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Desktop/saved_append_images</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>output folder</string>
+			<key>label</key>
+			<string></string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>dest_dir</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>0.1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/cage1016/alfrimgser</string>
+</dict>
 </plist>
