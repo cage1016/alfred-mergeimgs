@@ -8,11 +8,11 @@
         "category": "Tools",
         "bundle_id": "com.kaichu.mergeimgs",
         "created_by": "KAI CHU CHUNG",
-        "web_address": "https://github.com/cage1016/alfrimgser",
+        "web_address": "https://github.com/cage1016/alfred-mergeimgs",
         "version": "0.1.0"
     },
     "update": {
-        "github_repo": "https://github.com/cage1016/alfrimgser"
+        "github_repo": "https://github.com/cage1016/alfred-mergeimgs"
     },
     "license": {
         "type_comment": "support license https://github.com/nishanths/license",
