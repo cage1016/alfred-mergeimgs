@@ -216,27 +216,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<true/>
-				<key>acceptsmulti</key>
-				<integer>2</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>imgs2Horizontal</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>E8E48569-C5A7-4B7D-8475-AC74BFD331E9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -326,6 +305,27 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>imgs2Horizontal</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>E8E48569-C5A7-4B7D-8475-AC74BFD331E9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alignment</key>
 				<integer>0</integer>
 				<key>backgroundcolor</key>
@@ -352,6 +352,27 @@ fi</string>
 			<string>FEDA6472-CA2C-4FF1-AA85-B6024452ABBA</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>imgs2Vertical</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>1D03667F-CF36-4620-963C-191513FE2CDA</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -442,27 +463,6 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<true/>
-				<key>acceptsmulti</key>
-				<integer>2</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>imgs2Vertical</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>1D03667F-CF36-4620-963C-191513FE2CDA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -478,14 +478,14 @@ fi</string>
 		<key>6CC89FA2-21DF-49B2-8336-DFD38C70F014</key>
 		<dict>
 			<key>xpos</key>
-			<real>495</real>
+			<real>485</real>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
 		<key>9302FD9F-AE6C-4B4B-8C61-BBD097E1C9E0</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>280</real>
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
@@ -494,14 +494,14 @@ fi</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>680</real>
+			<real>670</real>
 			<key>ypos</key>
 			<real>125</real>
 		</dict>
 		<key>CBB8BDEE-8C35-42D1-9120-C783CD09F074</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>280</real>
 			<key>ypos</key>
 			<real>280</real>
 		</dict>
@@ -515,7 +515,7 @@ fi</string>
 		<key>F21735AC-A7F6-493D-9105-D18C3094F73F</key>
 		<dict>
 			<key>xpos</key>
-			<real>680</real>
+			<real>670</real>
 			<key>ypos</key>
 			<real>15</real>
 		</dict>
@@ -524,7 +524,7 @@ fi</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>680</real>
+			<real>670</real>
 			<key>ypos</key>
 			<real>235</real>
 		</dict>
