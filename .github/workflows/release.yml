@@ -7,19 +7,22 @@ on:
   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 
 jobs:
-  release-merge-images:
-    name: Release Merge Images
-    runs-on: ubuntu-latest
+  build:
+    strategy:
+      matrix:
+        platform: [macOS-latest]
+    runs-on: ${{ matrix.platform }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Run SSI Crawling
-        uses: addnab/docker-run-action@v3
-        with:
-          image: ghcr.io/cage1016/ak:0.1.0
-          options: >
-            --user root
-            --env NUM_WORKERS=30
-            -v ${{ github.workspace }}:/tmp/:rw
-            -w /tmp
-          run: /layers/google.go.build/bin/main alfred pack
+      - name: Install gon via HomeBrew for code signing and app notarization
+        run: |
+          brew install --cask alfred
+      - uses: docker-practice/actions-setup-docker@master
+      - run: |
+          set -x
+          USER_HOME=$(docker run --user cnb --rm --entrypoint bash ghcr.io/cage1016/ak:0.1.0 -c "printenv HOME")
+          docker run --user cnb --rm \
+            -v ${{ github.workspace }}:/workspace/:rw \
+            -v ~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist:${USER_HOME}/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist \
+            ghcr.io/cage1016/ak:0.1.0 alfred pack -d
