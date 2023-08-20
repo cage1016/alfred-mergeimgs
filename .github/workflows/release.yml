@@ -1,28 +1,87 @@
 name: Release
-
 on:
-  push:
-    branches:
-      - master
-  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+  release:
+    types:
+      - published
 
 jobs:
   build:
     strategy:
       matrix:
+        go-version: [1.20.x]
         platform: [macOS-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Install Go
+        if: success()
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Run unit tests
+        run: go test -v ./...
+      - name: Parse Event
+        run: |
+          echo "tag=$(jq -r '.release.tag_name' "${GITHUB_EVENT_PATH}" | sed s/^v//)" >> $GITHUB_ENV
+      - name: Import Code-Signing Certificates
+        uses: Apple-Actions/import-codesign-certs@v1
+        with:
+          # The certificates in a PKCS12 file encoded as a base64 string
+          p12-file-base64: "${{ secrets.APPLE_DEVELOPER_CERTIFICATE_P12_BASE64 }}"
+          # The password used to import the PKCS12 file.
+          p12-password: "${{ secrets.APPLE_DEVELOPER_CERTIFICATE_PASSWORD }}"
       - name: Install gon via HomeBrew for code signing and app notarization
         run: |
-          brew install --cask alfred
-      - uses: docker-practice/actions-setup-docker@master
-      - run: |
-          set -x
-          USER_HOME=$(docker run --user cnb --rm --entrypoint bash ghcr.io/cage1016/ak:0.1.0 -c "printenv HOME")
-          docker run --user cnb --rm \
-            -v ${{ github.workspace }}:/workspace/:rw \
-            -v ~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist:${USER_HOME}/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist \
-            ghcr.io/cage1016/ak:0.1.0 alfred pack -d
+          brew tap mitchellh/gon
+          brew install mitchellh/gon/gon
+      - name: Build and pack
+        run: |
+          # build package
+          GOOS=darwin GOARCH=amd64 go build -ldflags "-s -w" -o exe_amd64
+          GOOS=darwin GOARCH=arm64 go build -ldflags "-s -w" -o exe_arm64
+          lipo -create -output .workflow/exe exe_amd64 exe_arm64
+          rm  exe_amd64
+          rm  exe_arm64
+      - name: code sign and notarize
+        env:
+          AC_USERNAME: "${{ secrets.AC_USERNAME }}"
+          AC_PASSWORD: "${{ secrets.AC_PASSWORD }}"
+        run: |
+          # gon code sign
+          cat <<EOF >> gon.json
+          {
+              "source" : [".workflow/exe"],
+              "bundle_id" : "com.kaichu.mergeimgs",
+              "sign" :{
+                  "application_identity" : ""
+              }
+          }
+          EOF
+          gon -log-level=debug -log-json ./gon.json
+
+          # pack alfredworkflow
+          cd .workflow
+          plutil -replace version -string "${{ env.tag }}" info.plist
+          zip -r ../"MergeImages-${{ env.tag }}.alfredworkflow" .
+          cd ..
+
+          # zip alfredworkflow as zip archive for notarize
+          zip -r "MergeImages-${{ env.tag }}.alfredworkflow.zip" "MergeImages-${{ env.tag }}.alfredworkflow"
+
+          # gon notarize
+          cat <<EOF >> notarize.json
+          {
+              "notarize": [{
+                  "path": "${PWD}/MergeImages-${{ env.tag }}.alfredworkflow.zip",
+                  "bundle_id": "com.kaichu.mergeimgs",
+                  "staple": false
+              }]
+          }
+          EOF
+          gon -log-level=debug -log-json ./notarize.json
+
+          echo "artifact=$(echo "MergeImages-${{ env.tag }}.alfredworkflow")" >> $GITHUB_ENV
+      - uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: "${{ env.artifact }}"
