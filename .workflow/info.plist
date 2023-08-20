@@ -544,7 +544,7 @@ fi</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>desnitation</string>
+			<string>image merge destination</string>
 			<key>label</key>
 			<string>Output Folder</string>
 			<key>type</key>
