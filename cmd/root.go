@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 KAI CHU CHUNG
+Copyright © 2023 KAI CHU CHUNG <cage.chung@gmail.com>
 */
 package cmd
 
