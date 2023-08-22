@@ -21,6 +21,45 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2187CD43-CB1C-4FB7-A99A-8B5F7F87FFA3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5183C6C0-608F-4372-8BA4-E5036F72B5D2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>61D134F6-D10F-499E-9F07-D0F36BF3DB7C</key>
 		<array>
 			<dict>
@@ -59,11 +98,148 @@
 				<false/>
 			</dict>
 		</array>
+		<key>871E495E-2017-4F93-A914-C56AF5FDA48B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9A285E86-1C9F-4334-A9F1-D42E4EF5A66C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>61D134F6-D10F-499E-9F07-D0F36BF3DB7C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A42AF18D-836D-457F-B827-D54D1D9D027E</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A42AF18D-836D-457F-B827-D54D1D9D027E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6CC89FA2-21DF-49B2-8336-DFD38C70F014</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B7432B57-FC05-480D-BBCB-C599E37774CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5183C6C0-608F-4372-8BA4-E5036F72B5D2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CB5F69F4-2CFD-46E2-8D79-6FF31FCE1331</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AB2931E-A2BB-4656-95AC-AAF119BA497E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4B78864D-2AFF-46BB-967E-D85B3FF6DDCD</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>79E98A20-295D-45C8-8651-240C8BB10E3E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4F11AB4C-99F3-4226-90AA-A0D746E0448D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A285E86-1C9F-4334-A9F1-D42E4EF5A66C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -85,6 +261,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CB5F69F4-2CFD-46E2-8D79-6FF31FCE1331</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>KAI CHU CHUNG</string>
@@ -96,19 +285,6 @@
 	<string>Merge Images</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>F21735AC-A7F6-493D-9105-D18C3094F73F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -156,6 +332,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>F21735AC-A7F6-493D-9105-D18C3094F73F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -188,25 +377,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./exe merge -o "${dest_dir}" -m vertical -- $@</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>mg2Vertical</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
-			<string>A42AF18D-836D-457F-B827-D54D1D9D027E</string>
+			<string>1D03667F-CF36-4620-963C-191513FE2CDA</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -232,21 +419,457 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<true/>
-				<key>acceptsmulti</key>
-				<integer>2</integer>
-				<key>acceptstext</key>
+				<key>concurrently</key>
 				<false/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>mg2Vertical</string>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./exe merge -o "${dest_dir}" -m vertical -- $@</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1D03667F-CF36-4620-963C-191513FE2CDA</string>
+			<string>A42AF18D-836D-457F-B827-D54D1D9D027E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Merge Image File list</string>
+				<key>script</key>
+				<string>./exe mgl -t "${target}" -- "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Merge Image File list</string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9A285E86-1C9F-4334-A9F1-D42E4EF5A66C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>mga</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>5AB2931E-A2BB-4656-95AC-AAF119BA497E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>target</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>mgf</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>mgf</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>871E495E-2017-4F93-A914-C56AF5FDA48B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Merge Image Settings</string>
+				<key>script</key>
+				<string>./exe mgs "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Merge Image Settings</string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mgf</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Merge Image find</string>
+				<key>script</key>
+				<string>./exe mgf -- "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Merge Image find</string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>add</string>
+						<key>outputlabel</key>
+						<string>add</string>
+						<key>uid</key>
+						<string>4B78864D-2AFF-46BB-967E-D85B3FF6DDCD</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>back</string>
+						<key>outputlabel</key>
+						<string>back</string>
+						<key>uid</key>
+						<string>79E98A20-295D-45C8-8651-240C8BB10E3E</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>remove</string>
+						<key>outputlabel</key>
+						<string>remove</string>
+						<key>uid</key>
+						<string>4F11AB4C-99F3-4226-90AA-A0D746E0448D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>CB5F69F4-2CFD-46E2-8D79-6FF31FCE1331</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>mga</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B7432B57-FC05-480D-BBCB-C599E37774CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>mga</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Find and Open with Merge Images Add</string>
+				<key>title</key>
+				<string>Find and Open with Merge Images Add</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>5183C6C0-608F-4372-8BA4-E5036F72B5D2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./exe ma "$1" -a "${action}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>add</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>public.folder</string>
+					<string>public.symlink</string>
+				</array>
+				<key>name</key>
+				<string>Add Folder to Merge Images</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>2187CD43-CB1C-4FB7-A99A-8B5F7F87FFA3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -258,51 +881,178 @@
 		<key>10B1C732-754A-4473-8732-802EC308DF7D</key>
 		<dict>
 			<key>xpos</key>
-			<real>670</real>
+			<real>1160</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>295</real>
 		</dict>
 		<key>1D03667F-CF36-4620-963C-191513FE2CDA</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>295</real>
+		</dict>
+		<key>2187CD43-CB1C-4FB7-A99A-8B5F7F87FFA3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>File Action to add to config</string>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>1015</real>
+		</dict>
+		<key>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>985</real>
+		</dict>
+		<key>5183C6C0-608F-4372-8BA4-E5036F72B5D2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>900</real>
+		</dict>
+		<key>5AB2931E-A2BB-4656-95AC-AAF119BA497E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>1160</real>
+			<key>ypos</key>
+			<real>510</real>
 		</dict>
 		<key>61D134F6-D10F-499E-9F07-D0F36BF3DB7C</key>
 		<dict>
 			<key>xpos</key>
-			<real>325</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>165</real>
 		</dict>
 		<key>6CC89FA2-21DF-49B2-8336-DFD38C70F014</key>
 		<dict>
 			<key>xpos</key>
-			<real>525</real>
+			<real>1015</real>
 			<key>ypos</key>
-			<real>155</real>
+			<real>255</real>
+		</dict>
+		<key>871E495E-2017-4F93-A914-C56AF5FDA48B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>675</real>
+		</dict>
+		<key>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>1160</real>
+			<key>ypos</key>
+			<real>675</real>
+		</dict>
+		<key>9A285E86-1C9F-4334-A9F1-D42E4EF5A66C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>Merge Images Files list</string>
+			<key>xpos</key>
+			<real>530</real>
+			<key>ypos</key>
+			<real>505</real>
 		</dict>
 		<key>A42AF18D-836D-457F-B827-D54D1D9D027E</key>
 		<dict>
 			<key>xpos</key>
-			<real>325</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>295</real>
+		</dict>
+		<key>B7432B57-FC05-480D-BBCB-C599E37774CA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>900</real>
+		</dict>
+		<key>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>list targets folder</string>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>675</real>
+		</dict>
+		<key>CB5F69F4-2CFD-46E2-8D79-6FF31FCE1331</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>680</real>
+		</dict>
+		<key>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>535</real>
+		</dict>
+		<key>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>targets folder maintenance</string>
+			<key>xpos</key>
+			<real>915</real>
+			<key>ypos</key>
+			<real>955</real>
 		</dict>
 		<key>E8E48569-C5A7-4B7D-8475-AC74BFD331E9</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>165</real>
 		</dict>
 		<key>F21735AC-A7F6-493D-9105-D18C3094F73F</key>
 		<dict>
 			<key>xpos</key>
-			<real>670</real>
+			<real>1160</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>165</real>
+		</dict>
+		<key>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>Merge Images action menu: add / remove</string>
+			<key>xpos</key>
+			<real>530</real>
+			<key>ypos</key>
+			<real>675</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -327,6 +1077,71 @@
 			<string>filepicker</string>
 			<key>variable</key>
 			<string>dest_dir</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>20</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Max Query Result</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>MAX_QUERY_RESULTS</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>-e png
+-e bmp
+-e gif
+-e jpg
+-e jpeg</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+				<key>verticalsize</key>
+				<integer>6</integer>
+			</dict>
+			<key>description</key>
+			<string>filter search results by their file extension.</string>
+			<key>label</key>
+			<string>Qeury Extension</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>QUERY_EXTENSION</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Debug</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>DEBUG</string>
 		</dict>
 	</array>
 	<key>version</key>
