@@ -2,6 +2,7 @@ package lib
 
 import (
 	"math/rand"
+	"strings"
 	"time"
 )
 
@@ -20,4 +21,18 @@ func randomString(length int, charset string) string {
 func RandomImageFilename(length int) string {
 	filename := randomString(length, charset)
 	return filename + ".png"
+}
+
+var ErrorMessage = []string{
+	"error",
+	"fd error",
+}
+
+func IsFdError(line string) bool {
+	for _, msg := range ErrorMessage {
+		if strings.Contains(line, msg) {
+			return true
+		}
+	}
+	return false
 }
