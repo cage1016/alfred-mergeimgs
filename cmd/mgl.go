@@ -76,7 +76,6 @@ func runMglCmd(cmd *cobra.Command, args []string) {
 						ActionForType("file", documents[:i]...).
 						Icon(&aw.Icon{
 							Value: doc,
-							Type:  "fileicon",
 						})
 
 					wi.Alt().
@@ -99,7 +98,6 @@ func runMglCmd(cmd *cobra.Command, args []string) {
 						ActionForType("file", nTargets...).
 						Icon(&aw.Icon{
 							Value: doc,
-							Type:  "fileicon",
 						})
 
 					wi.Alt().
