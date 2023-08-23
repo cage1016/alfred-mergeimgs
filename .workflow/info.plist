@@ -430,7 +430,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>failed with error: {var:err}</string>
+				<string>{var:err}</string>
 				<key>title</key>
 				<string>Merge Images</string>
 			</dict>

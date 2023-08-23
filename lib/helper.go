@@ -1,7 +1,9 @@
 package lib
 
 import (
+	"fmt"
 	"math/rand"
+	"os/exec"
 	"strings"
 	"time"
 )
@@ -35,4 +37,12 @@ func IsFdError(line string) bool {
 		}
 	}
 	return false
+}
+
+func CheckCommand(name string) error {
+	_, err := exec.LookPath(name)
+	if err != nil {
+		return fmt.Errorf("command '%s' not found", name)
+	}
+	return nil
 }
