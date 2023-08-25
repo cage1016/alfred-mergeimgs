@@ -46,6 +46,8 @@ Visit the [Releases](https://github.com/cage1016/alfred-mergeimgs/releases) to d
 
 ### `mgf` Merge image as vertical in order
 
+- `⌥` + `↩` to merge as vertical
+
 ![](screenshots/2-2.png)
 
 ### `mgf` Custom merge order as horizontal
@@ -53,6 +55,8 @@ Visit the [Releases](https://github.com/cage1016/alfred-mergeimgs/releases) to d
 ![](screenshots/2-3.png)
 
 ### `mgf` Custom merge order as vertical
+
+- `⌥` + `↩` to merge as vertical
 
 ![](screenshots/2-4.png)
 
