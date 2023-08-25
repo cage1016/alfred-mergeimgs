@@ -6,12 +6,14 @@ package cmd
 import (
 	"os/exec"
 	"path/filepath"
+	"strings"
 
 	aw "github.com/deanishe/awgo"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
+	"github.com/cage1016/alfred-mergeimgs/alfred"
 	"github.com/cage1016/alfred-mergeimgs/lib"
 )
 
@@ -27,8 +29,8 @@ var mergeCmd = &cobra.Command{
 }
 
 var appendCmd = map[string]string{
-	"horizontal": "+append",
-	"vertical":   "-append",
+	"horizontal": "+smush",
+	"vertical":   "-smush",
 }
 
 func ErrorHandle(err error) {
@@ -65,10 +67,21 @@ func runMergeCmd(cmd *cobra.Command, args []string) {
 		return
 	}
 
-	cmds := []string{ap}
+	cmds := []string{ap, alfred.GetOffset(wf)}
+
+	// gravity
+	cmds = append(cmds, "-gravity", alfred.GetGravity(wf))
+
+	// background
+	if alfred.GetBackground(wf) != "" {
+		cmds = append(cmds, "-background", alfred.GetBackground(wf))
+	}
+
 	cmds = append(cmds, args...)
 	cmds = append(cmds, output)
 	err := runCmd("convert", cmds...)
+
+	logrus.Debugf("cmds: convert %v", strings.Join(cmds, " "))
 
 	if err != nil {
 		ErrorHandle(errors.Wrap(err, "failed to merge images"))

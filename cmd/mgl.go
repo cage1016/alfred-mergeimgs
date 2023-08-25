@@ -9,6 +9,7 @@ import (
 	"strings"
 
 	aw "github.com/deanishe/awgo"
+	"github.com/samber/lo"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
@@ -94,8 +95,8 @@ func runMglCmd(cmd *cobra.Command, args []string) {
 
 					wi.Quicklook(doc).
 						Valid(true).
-						Arg(nTargets...).
-						ActionForType("file", nTargets...).
+						Arg(lo.Reverse(nTargets)...).
+						ActionForType("file", lo.Reverse(nTargets)...).
 						Icon(&aw.Icon{
 							Value: doc,
 						})
@@ -103,7 +104,7 @@ func runMglCmd(cmd *cobra.Command, args []string) {
 					wi.Alt().
 						Subtitle("Press return to merge vertical select files in order.").
 						Valid(true).
-						Arg(nTargets...)
+						Arg(lo.Reverse(nTargets)...)
 				}
 			}
 		} else {
