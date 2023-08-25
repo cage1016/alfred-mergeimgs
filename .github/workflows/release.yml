@@ -53,7 +53,7 @@ jobs:
               "source" : [".workflow/exe"],
               "bundle_id" : "com.kaichu.mergeimgs",
               "sign" :{
-                  "application_identity" : ""
+                  "application_identity" : "Developer ID Application: KAI CHU CHUNG"
               }
           }
           EOF
