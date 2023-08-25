@@ -932,7 +932,64 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># alfred-mergeimgs
+
+Alfred workflow to merge images as horizontal or vertical
+
+## Prerequisites
+
+- Alfred 5
+- [sharkdp/fd: A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
+- [ImageMagick – Convert, Edit, or Compose Digital Images](https://imagemagick.org/)
+
+## Features
+
+- Universal Action `mg2Horizontal` and `mg2Vertical` to merge images as horizontal or vertical
+- Manage source folders to select images to merge quickly. `mga` to pick up source folders
+- Custom image extension filter
+- Custom output file name
+- Custom background color
+- Custom offset between images
+
+## Usage
+
+### Universal Action
+
+![](1-1.png)
+
+### Manage source folders
+
+![](1-2.png)
+
+### `mga` to pick up source folders
+![](1-3.png)
+
+### `mgf` Merge image as horizontal in order
+
+![](2-1.png)
+
+### `mgf` Merge image as vertical in order
+
+- `⌥` + `↩` to merge as vertical
+
+![](2-2.png)
+
+### `mgf` Custom merge order as horizontal
+
+![](2-3.png)
+
+### `mgf` Custom merge order as vertical
+
+- `⌥` + `↩` to merge as vertical
+
+![](2-4.png)
+
+## Change Log
+
+### 0.1.0
+- Initial release
+
+https://github.com/cage1016/alfred-mergeimgs</string>
 	<key>uidata</key>
 	<dict>
 		<key>10B1C732-754A-4473-8732-802EC308DF7D</key>
@@ -1256,7 +1313,7 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string></string>
+				<string>transparent</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
