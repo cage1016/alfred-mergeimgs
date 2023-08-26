@@ -4,6 +4,7 @@ Copyright © 2023 KAI CHU CHUNG <cage.chung@gmail.com>
 package cmd
 
 import (
+	"errors"
 	"log"
 	"os"
 
@@ -43,6 +44,11 @@ func Execute() {
 func init() {
 	wf = aw.New(update.GitHub(repo), aw.HelpURL(repo+"/issues"))
 	wf.Args() // magic for "workflow:update"
+
+	// Create init dir if it doesn't exist
+	if _, err := os.Stat(alfred.GetDestDir(wf)); errors.Is(err, os.ErrNotExist) {
+		os.Mkdir(alfred.GetDestDir(wf), 0755)
+	}
 
 	if alfred.GetDebug(wf) {
 		logrus.SetLevel(logrus.DebugLevel)
