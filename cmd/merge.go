@@ -48,12 +48,14 @@ func runMergeCmd(cmd *cobra.Command, args []string) {
 
 	// check fd command
 	if err := lib.CheckCommand("fd"); err != nil {
+		av.Arg("https://github.com/sharkdp/fd")
 		ErrorHandle(errors.Wrap(err, "failed to check fd command"))
 		return
 	}
 
 	// check imagemagick command
 	if err := lib.CheckCommand("convert"); err != nil {
+		av.Arg("https://github.com/ImageMagick/ImageMagick")
 		ErrorHandle(errors.Wrap(err, "failed to check imagemagick command"))
 		return
 	}

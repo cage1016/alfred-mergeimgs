@@ -83,13 +83,74 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>sourceoutputuid</key>
-				<string>57CB54B3-8B1E-4F86-8390-AC626FA235F7</string>
+				<string>8F99D40C-FE62-4CBC-B22D-AECDD8B007AA</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>10B1C732-754A-4473-8732-802EC308DF7D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>379B59A7-6D60-419C-A238-1A176A1E06FD</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>10B1C732-754A-4473-8732-802EC308DF7D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A4478C2-4609-4AE0-A26C-C4892EDAFB8D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>379B59A7-6D60-419C-A238-1A176A1E06FD</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>74734AE9-EFD8-4924-9D21-E3E32E252514</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>84E30362-8761-4E30-9CF3-F1D1D23DF5EE</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A4478C2-4609-4AE0-A26C-C4892EDAFB8D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>75A6C590-0A45-49B3-B230-32899A34680D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -164,7 +225,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EA80EEB4-539E-480E-BE66-5D7F9E4BD1A7</string>
+				<string>74734AE9-EFD8-4924-9D21-E3E32E252514</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -261,31 +322,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EA80EEB4-539E-480E-BE66-5D7F9E4BD1A7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>84E30362-8761-4E30-9CF3-F1D1D23DF5EE</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</key>
 		<array>
 			<dict>
@@ -318,7 +354,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./exe merge -o "${dest_dir}" -m horizontal -- $@</string>
+				<string>./exe merge -o "${DEST_DIR}" -m horizontal -- $@</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -374,21 +410,35 @@
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:err}</string>
+						<string>{query}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>4</integer>
 						<key>matchstring</key>
-						<string></string>
+						<string>^(/?[\w\s.-]+)+$</string>
 						<key>outputlabel</key>
 						<string>success</string>
 						<key>uid</key>
-						<string>57CB54B3-8B1E-4F86-8390-AC626FA235F7</string>
+						<string>8F99D40C-FE62-4CBC-B22D-AECDD8B007AA</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^(https?):\/\/[^\s/$.?#].[^\s]*$</string>
+						<key>outputlabel</key>
+						<string>open url</string>
+						<key>uid</key>
+						<string>379B59A7-6D60-419C-A238-1A176A1E06FD</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>error</string>
+				<string>error handling</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
@@ -449,7 +499,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./exe merge -o "${dest_dir}" -m vertical -- $@</string>
+				<string>./exe merge -o "${DEST_DIR}" -m vertical -- $@</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -514,25 +564,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>mga</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>5AB2931E-A2BB-4656-95AC-AAF119BA497E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -553,6 +584,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0A4478C2-4609-4AE0-A26C-C4892EDAFB8D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -561,43 +613,38 @@
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>1</integer>
+						<integer>4</integer>
 						<key>matchstring</key>
-						<string></string>
+						<string>^(/?[\w\s.-]+)+$</string>
 						<key>outputlabel</key>
-						<string>valid</string>
+						<string>folder path valid</string>
 						<key>uid</key>
 						<string>84E30362-8761-4E30-9CF3-F1D1D23DF5EE</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^(https?):\/\/[^\s/$.?#].[^\s]*$</string>
+						<key>outputlabel</key>
+						<string>open url</string>
+						<key>uid</key>
+						<string>75A6C590-0A45-49B3-B230-32899A34680D</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>invalid</string>
+				<string></string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>EA80EEB4-539E-480E-BE66-5D7F9E4BD1A7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>mgf</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</string>
+			<string>74734AE9-EFD8-4924-9D21-E3E32E252514</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -615,53 +662,6 @@
 			<string>871E495E-2017-4F93-A914-C56AF5FDA48B</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Merge Image Settings</string>
-				<key>script</key>
-				<string>./exe mgs "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Merge Image Settings</string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -709,6 +709,91 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>mga</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>5AB2931E-A2BB-4656-95AC-AAF119BA497E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>mgf</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>9A08AEAF-BC37-4E55-A6ED-EB9E795140CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Merge Image Settings</string>
+				<key>script</key>
+				<string>./exe mgs "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Merge Image Settings</string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F3B91C50-DE14-4802-AA3C-BF2D54B0E453</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -992,6 +1077,15 @@ Alfred workflow to merge images as horizontal or vertical
 https://github.com/cage1016/alfred-mergeimgs</string>
 	<key>uidata</key>
 	<dict>
+		<key>0A4478C2-4609-4AE0-A26C-C4892EDAFB8D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>1465</real>
+			<key>ypos</key>
+			<real>575</real>
+		</dict>
 		<key>10B1C732-754A-4473-8732-802EC308DF7D</key>
 		<dict>
 			<key>xpos</key>
@@ -1015,7 +1109,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>215</real>
 			<key>ypos</key>
-			<real>1015</real>
+			<real>1110</real>
 		</dict>
 		<key>324DE7D3-1D8C-46F6-BDD3-F824D6881C59</key>
 		<dict>
@@ -1024,7 +1118,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>985</real>
+			<real>1080</real>
 		</dict>
 		<key>5183C6C0-608F-4372-8BA4-E5036F72B5D2</key>
 		<dict>
@@ -1033,30 +1127,39 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>215</real>
 			<key>ypos</key>
-			<real>900</real>
+			<real>995</real>
 		</dict>
 		<key>5AB2931E-A2BB-4656-95AC-AAF119BA497E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>1460</real>
+			<real>1465</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>705</real>
 		</dict>
 		<key>61D134F6-D10F-499E-9F07-D0F36BF3DB7C</key>
 		<dict>
 			<key>xpos</key>
-			<real>1085</real>
+			<real>985</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>6CC89FA2-21DF-49B2-8336-DFD38C70F014</key>
 		<dict>
 			<key>xpos</key>
-			<real>1305</real>
+			<real>1185</real>
 			<key>ypos</key>
 			<real>265</real>
+		</dict>
+		<key>74734AE9-EFD8-4924-9D21-E3E32E252514</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>580</real>
 		</dict>
 		<key>871E495E-2017-4F93-A914-C56AF5FDA48B</key>
 		<dict>
@@ -1072,9 +1175,9 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<real>1455</real>
+			<real>1465</real>
 			<key>ypos</key>
-			<real>670</real>
+			<real>835</real>
 		</dict>
 		<key>9A285E86-1C9F-4334-A9F1-D42E4EF5A66C</key>
 		<dict>
@@ -1085,12 +1188,12 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>690</real>
 			<key>ypos</key>
-			<real>480</real>
+			<real>455</real>
 		</dict>
 		<key>A42AF18D-836D-457F-B827-D54D1D9D027E</key>
 		<dict>
 			<key>xpos</key>
-			<real>1085</real>
+			<real>985</real>
 			<key>ypos</key>
 			<real>305</real>
 		</dict>
@@ -1101,7 +1204,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>900</real>
+			<real>995</real>
 		</dict>
 		<key>C2F57281-0EA9-4FE2-8834-EBFFE07D0A52</key>
 		<dict>
@@ -1121,16 +1224,16 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>920</real>
 			<key>ypos</key>
-			<real>680</real>
+			<real>840</real>
 		</dict>
 		<key>D8AF1B2F-BACD-4D26-8FB6-D01E2BB2635B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<real>575</real>
+			<real>595</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>485</real>
 		</dict>
 		<key>E88427E1-C8AB-4FEF-8D01-7A0F1E9351F3</key>
 		<dict>
@@ -1141,7 +1244,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>1085</real>
 			<key>ypos</key>
-			<real>955</real>
+			<real>1050</real>
 		</dict>
 		<key>E8E48569-C5A7-4B7D-8475-AC74BFD331E9</key>
 		<dict>
@@ -1149,15 +1252,6 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<real>215</real>
 			<key>ypos</key>
 			<real>175</real>
-		</dict>
-		<key>EA80EEB4-539E-480E-BE66-5D7F9E4BD1A7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<real>455</real>
-			<key>ypos</key>
-			<real>590</real>
 		</dict>
 		<key>F21735AC-A7F6-493D-9105-D18C3094F73F</key>
 		<dict>
@@ -1175,7 +1269,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>xpos</key>
 			<real>690</real>
 			<key>ypos</key>
-			<real>675</real>
+			<real>835</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1199,7 +1293,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 			<key>type</key>
 			<string>filepicker</string>
 			<key>variable</key>
-			<string>dest_dir</string>
+			<string>DEST_DIR</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1372,7 +1466,7 @@ https://github.com/cage1016/alfred-mergeimgs</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-mergeimgs</string>
 </dict>

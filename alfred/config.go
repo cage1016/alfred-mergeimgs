@@ -11,6 +11,7 @@ const (
 	Gravity         = "GRAVITY"
 	Background      = "BACKGROUND"
 	Offset          = "OFFSET"
+	DestDir         = "DEST_DIR"
 )
 
 func GetDebug(wf *aw.Workflow) bool {
@@ -35,4 +36,8 @@ func GetBackground(wf *aw.Workflow) string {
 
 func GetOffset(wf *aw.Workflow) string {
 	return wf.Config.Get(Offset)
+}
+
+func GetDestDir(wf *aw.Workflow) string {
+	return wf.Config.Get(DestDir)
 }
