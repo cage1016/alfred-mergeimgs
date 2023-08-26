@@ -62,6 +62,10 @@ Visit the [Releases](https://github.com/cage1016/alfred-mergeimgs/releases) to d
 
 ## Change Log
 
+### 0.1.1
+- Fix `fd`, `convert` commnad not found do not open help page
+- Create default folder if not exist
+
 ### 0.1.0
 - Initial release
 

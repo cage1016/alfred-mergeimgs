@@ -1071,6 +1071,10 @@ Alfred workflow to merge images as horizontal or vertical
 
 ## Change Log
 
+### 0.1.1
+- Fix `fd`, `convert` commnad not found do not open help page
+- Create default folder if not exist
+
 ### 0.1.0
 - Initial release
 
